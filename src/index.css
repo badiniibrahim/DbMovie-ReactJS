@@ -1,13 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,800,800i");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  height: 100%;
+  background-image: url("./assets/icons/back.jpg");
+  background-size: cover; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .main__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  background-color: black;
+  justify-content: space-between;
+  align-content: center; }
+  .nav-bar > img {
+    display: flex;
+    width: 60px;
+    margin-top: 10px;
+    margin-right: 20px; }
+
+p {
+  color: white;
+  height: 150px;
+  width: 100%;
+  font-weight: 100;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 25px; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  width: 100%;
+  margin-top: auto; }
+
+.movie-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px; }
+  .movie-items .item {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 10px; }
+    .movie-items .item > img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px; }
+      .movie-items .item > img:hover {
+        cursor: pointer; }

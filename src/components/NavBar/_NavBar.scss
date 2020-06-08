@@ -1,0 +1,15 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-content: center;    
+
+    > img {
+        display: flex;
+        width: 60px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+}

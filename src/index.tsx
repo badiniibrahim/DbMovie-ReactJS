@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Main from './container/Main';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux'
+import store from './store/configStore'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import MovieDetail from './components/MovieDetail'
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+         <Switch>
+             <Route exact path='/' component={Main}/>
+             <Route  path='/:id' children={<MovieDetail/>}/>
+          </Switch>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,800,800i');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('./assets/icons/back.jpg');
+    background-size: cover;
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+   &__content {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       width: 100%; 
+   }
+}
+
+@import './components/NavBar/NavBar';
+@import './components/CustomText/CustomText';
+@import './components/Footer/Footer';
+@import './components/MovieItems/MovieItems';
